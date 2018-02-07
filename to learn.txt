@@ -1,0 +1,2 @@
+maven comands for particular life cycle
+clean what does it do 

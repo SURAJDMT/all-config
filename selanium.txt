@@ -1,0 +1,18 @@
+firefox-53,54 and selanum -2.9.1
+can write test casess and target
+
+
+Locaters
+id, xpath, name, link, tag, DOM-getEmememntByname, id, index
+How to test without browser?
+always test run in incognint 
+getUrl to open url
+getTitle
+driver.getPageSource() -- to get sourse 
+mouse events and keyboard events
+robo class for that above events 
+
+
+Dom locators used when no browser is used
+explicit and implisit
+explisit is for condition

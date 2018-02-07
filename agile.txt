@@ -1,0 +1,48 @@
+Customerinvolvment, accept the change, fixed resource, short cycle, feedback, flexible is agile time, less documentation
+
+Types:-------------------
+waterfall model - requrnment, design, execution, testing ,RELEASE
+v-shaped model - testing plans are also done 
+prototype- first do small tings 
+irirative method- repeating waterfall model
+agile-product backlog, sprint backlog, valuable product, 3 to 4 weeks, continues negotiation, loosly coupaled
+
+agile manifasto::::::
+indivusuals and interaction VS process and tools
+working software VS document
+colabration VS negotiation
+change VS same plan
+
+
+12 principles;;;;;
+fast delivary
+welcome chanding
+working software
+colobarate
+indiviudal
+face to face convo
+constand phase
+simple solution
+regular devolepment
+
+
+
+3roles::
+product owner
+scrum master
+team
+
+
+
+
+
+userstories';;;'
+as a user
+i need
+so that 
+
+
+Retrospective meeting
+
+----------------------------------------------------------
+open data 

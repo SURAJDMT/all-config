@@ -1,0 +1,149 @@
+NPM
+-----------------
+java scrpt package manager
+front end frame work
+libraries, bootstrap , jquery 
+npm install bootstrap --save
+npm -v
+dependencies in package.json File npm init to create package.json
+--save in the dependency manger i.e, json file
+npm install
+npm install -g angularcli
+npm root -g (to find where the -g installs the software)
+------------------------------------------------------------------------------------------------------
+SPRING REST, XML, JSON
+------------------------------------
+REST - representational state transfer , HTTP, invoke, an architectural style and approach to communications often used in web services development.
+@JsonProperty, @JsonIgnoreProperties, @JsonPropertyOrder, @JsonInclude
+jackson -ANNOTATION, DATABIND, MAPPER --json
+jackson - DATAFORMATEXML, JAXB-ANNOTATION, WOODSTOX-CORE, STAX2 - XML
+client resposibility to specify in which formate it need the info
+ataching headder key -- accept value -- application/xml or json
+method = Requestmathod.GET, produces = MediaType.APPLICATION_XML_VALUES
+consumes for put mediaType.application_XML_VALUE
+@PathVariable("name")
+-----------------------------------------------------------------------------------------------------
+ANGULAR
+-----------------------------
+npm install -g @angular/cli
+ng new angular-tour-of-heroes
+ng serve --open
+ng g service [name]
+ng g c [name]
+ng generate module [name]
+ng g guard [name]
+
+
+routing with modules
+lazy loading using module use forChild and # in path component
+ { path: 'lazy', loadChildren: 'lazy/lazy.module#LazyModule' }
+inside module there will be routing module contain forChild
+
+
+REACTIVE FORMS
+------------------------------------------------------------------------------------------
+MEDIA QUERY
+----------------------
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+@media only screen and (max-width: 500px)
+
+@media only screen and (min-width: 500px)
+
+
+
+REDUSE
+----------------
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) =>accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+ console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+
+CSS USING ES6
+-------------------------
+export default {
+ '.blueText': {
+    color: 'blue',
+    fontSize: 12,
+  },
+};
+
+
+
+CSS styles are defined as plain objects exported from .css.js files.
+At build time, .css.js file exports are converted to CSS markup.
+Converted CSS markup is processed by Webpack css-loader.
+
+
+PIC
+
+-----------------------------------------------------------------------------
+HTML5 AND SASS
+-----------------------------
+ <header>, <footer>, <article>, and <section>
+number, date, time, calendar, and range
+  semantics
+
+
+$valiableName : value
+ nested csss i.e,
+
+#horznav{
+a{
+color:white;
+&:hover{
+color:#alkkkl                   
+}
+}}
+
+#main {
+  width: 97%;
+
+  p, div {
+    font-size: 2em;
+    a { font-weight: bold; }
+  }
+
+  pre { font-size: 3em; }
+}
+
+---------------------
+.funky {
+  font: {
+    family: fantasy;
+    size: 30em;
+    weight: bold;
+  }
+}
+is compiled to:
+
+.funky {
+  font-family: fantasy;
+  font-size: 30em;
+  font-weight: bold; }
+--------------------------------
+no single line will be appear in css output
+$weidth : 5em !global;
+roundoff , addition, division
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

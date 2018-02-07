@@ -1,0 +1,139 @@
+
+
+
+
+
+
+class Mohan { 
+
+   constructor(height, weight) { 
+      this.h = height; 
+      this.w = weight;
+   } 
+   test() { 
+      console.log("height of the MOHAN: ", this.h) 
+      console.log("WEIGHT of the MOHAN: ",this. w) 
+   } 
+} 
+
+
+//creating an instance  
+let polyObj = new Mohan(10,20); 
+polyObj.test();      
+
+// iterators
+
+var myIterable = {};
+myIterable[Symbol.iterator] = function* () {
+    yield 1;
+    yield 2;
+    yield 3;
+};
+
+for (let value of myIterable) { 
+    console.log(value); 
+}
+
+//
+
+//Map Example
+let points =[10,20,30];   
+let addone=(element)=>
+{return element +1} 
+
+points = points.map(addone);
+
+console.log(points);
+
+
+//Filter
+
+
+let scores =[10,40,80,20,70] 
+let ispass =(grade)=>{return grade >50} 
+
+let passing = scores.filter(ispass);
+console.log(passing)
+
+
+//reduce
+
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) =>accumulator + currentValue;
+
+
+ console.log(array1.reduce(reducer));
+console.log(array1.reduce(reducer, 5));
+
+//
+
+let array = [1,2,3,4,5];
+
+
+function myFun(array){
+let count =0;
+return{
+    next: function(){
+        return count < array.length ?
+        {value: array[count++],done:false}:
+        {value: undefined, done: true};
+    }
+}
+}
+
+let demo = myFun(array);
+console.log(demo.next());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dir -----will give the files 
+git rm specified file ----------- remove 
+mv --move 
+
+
+
+
+
+
+
+
+
+-----------MANAGE
+json,xml rest
+Ability to create iterators, classes, decorators, inject dependencies, apply arrow functions
+Use array Map, Reduce and Filters effectively
+ES6
+SASS
+HTML5
+----------THRIVE
+FORK
+JSTL
+design pattern

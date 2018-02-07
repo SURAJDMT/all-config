@@ -1,0 +1,203 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    function gettab(value) {
+      document.getElementById('table1').style.display = "none";
+      document.getElementById('table2').style.display = "none";
+      document.getElementById('table3').style.display = "none";
+
+      if (value == 'Mobile') {
+        document.getElementById('table1').style.display = "block";
+      }
+      else if (value == 'Lap') {
+        document.getElementById('table2').style.display = "block";
+      }
+      else if (value == 'systems') {
+        document.getElementById('table3').style.display = "block";
+      }
+
+    }
+
+  </script>
+  <title> Fifth</title>
+
+
+  <style>
+    @media only screen and (max-width:100px) {
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid" style="padding:0px 0px 0px 0px">
+    <div class="col-xs-*" style="background-color:#FFA500;height:72px;font-size:40px; font-family: 'Audiowide'">&nbsp &nbsp&nbsp &nbsp Electronic Shop</div>
+    <div class="col-xs-3" style="background-color:#FFD700;position:relative;font-family: 'Sofia';font-size:24px;height:84.7vh;float:left;"> <a href="form.html"> Click Here For Form </a> <br><br> <a href="#"> View Products</a> </div>
+    <div class="col-xs-9" style="background-color:#EEEEEE;font-family: 'Sofia';position:relative;height:84.7vh;font-size:25px;float:left;">
+      
+      <span class="glyphicon glyphicon-search"></span> Choose a Product Category 
+      <br><br>
+       Select one of the device<select id="op" onchange="gettab(this.value)"><br>
+        <option value="Mobile" >Mobile</option>
+        <option value="Lap" >Lap</option>
+        <option value="systems" >systems</option>
+       
+    </select>
+      <br>
+      <br>
+      <div>
+        <table id="table1" class="table table-hover" style="display:none">
+
+          <tr>
+            <th>MOBILE SERIES</th>
+            <th>COMPANY</th>
+            <th>COST</th>
+          </tr>
+
+
+          <tr>
+            <td>SM1</td>
+            <td>Samsung</td>
+            <td>300000</td>
+          </tr>
+          <tr>
+            <td>MI2</td>
+            <td>Mi</td>
+            <td>4000</td>
+          </tr>
+          <tr>
+            <td>dl3</td>
+            <td>Dooley</td>
+            <td>70000</td>
+          </tr>
+
+
+          <tr>
+            <td>S1</td>
+            <td>SONY</td>
+            <td>300000</td>
+          </tr>
+          <tr>
+            <td>M2</td>
+            <td>MICRO</td>
+            <td>40230</td>
+          </tr>
+          <tr>
+            <td>D3</td>
+            <td>Dooley</td>
+            <td>34570</td>
+          </tr>
+
+        </table>
+
+        <table id="table2" class="table table-hover" style="display:none">
+          <tr>
+            <th>LAP CODE</th>
+            <th>COMPANY</th>
+            <th>COST</th>
+          </tr>
+
+
+          <tr>
+            <td>a1</td>
+            <td>APPLE</td>
+            <td>300000</td>
+          </tr>
+          <tr>
+            <td>as2</td>
+            <td>ASUS</td>
+            <td>67040</td>
+          </tr>
+          <tr>
+            <td>h3</td>
+            <td>HP</td>
+            <td>89000</td>
+          </tr>
+          <tr>
+            <td>SM1</td>
+            <td>Samsung</td>
+            <td>300000</td>
+          </tr>
+          <tr>
+            <td>MI2</td>
+            <td>Mi</td>
+            <td>4000</td>
+          </tr>
+          <tr>
+            <td>dl3</td>
+            <td>Dooley</td>
+            <td>70000</td>
+          </tr>
+
+        </table>
+
+        <table id="table3" class="table table-hover" style="display:none">
+
+          <tr>
+            <th>System ID</th>
+            <th>COMPANY</th>
+            <th>COST</th>
+          </tr>
+
+          <tr>
+            <td>SM1</td>
+            <td>Samsung</td>
+            <td>300000</td>
+          </tr>
+          <tr>
+            <td>MI2</td>
+            <td>Mi</td>
+            <td>4000</td>
+          </tr>
+          <tr>
+            <td>dl3</td>
+            <td>Dooley</td>
+            <td>70000</td>
+          </tr>
+
+
+          <tr>
+            <td>S1</td>
+            <td>SONY</td>
+            <td>300000</td>
+          </tr>
+          <tr>
+            <td>M2</td>
+            <td>MICRO</td>
+            <td>40230</td>
+          </tr>
+          <tr>
+            <td>D3</td>
+            <td>Dooley</td>
+            <td>34570</td>
+          </tr>
+        </table>
+      </div>
+
+
+    </div>
+  </div>
+
+  
+  <div class="container-fluid" style="padding:0px 0px 0px 0px;">
+    <div class="col-xs-*" style="background-color:#FFA500;height:72px;font-size:25px;">
+      <center> Copy Right &copy; mindtree</center>
+    </div>
+  </div>
+</body>
+
+</html>

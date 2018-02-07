@@ -1,0 +1,31 @@
+package com.mindtree.service;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.mindtree.entity.Locations;
+
+public class DemoLoc {
+	SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+	public void addLocation() {
+		String string[] = { "cityBusStop", "cubbonPark", "kempegowdaBusStop", "whiteField", "marthalli", "btmLayout",
+				"mejestic", "yashwanthpur", "kengeri", "malleswaram", "IndiraNagar", "koramangala", "banashankari",
+				"basavanagudi", "ulsoor", "hebbal", "jayanagar", "itpl", "vidyanagar", "railwayStation" };
+		Locations location = new Locations();
+		for(int i=0;i<string.length;i++){
+			Session session = sessionFactory.openSession();
+			session.beginTransaction();
+			location.setLocation(string[i]);
+			session.save(location);
+			session.getTransaction().commit();
+			session.close();
+		}
+sessionFactory.close();
+	}
+	public static void main(String[] args) {
+		DemoLoc d = new DemoLoc();
+		d.addLocation();
+	}
+
+}

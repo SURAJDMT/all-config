@@ -1,0 +1,31 @@
+It is a platform to host any type of application
+
+
+Web application of any type
+5 different app:
+-----------
+web app
+mobile app
+api app
+logic app
+function
+
+
+
+
+
+
+
+
+
+----------------------------------
+1)Mysql
+2)HTML<CSS<SASS
+3)bootstrap, mediaQuery
+4)es6,ts,webpack
+5)angular
+6)buisenesslayer
+7)multithreadding
+8)spring
+9)hibernate
+10)karma

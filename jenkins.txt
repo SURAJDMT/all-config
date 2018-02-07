@@ -1,0 +1,69 @@
+item
+name
+click maven or depend
+after adding we need to configure
+source control managment in that GIT paste url then give credential as SSH key m1027284
+apply and save
+click build
+
+
+
+build trigger managment
+click on BUILD WHEN CHANGED
+push event
+advance
+generate secrate tocken
+copy and past in gi settings in git
+intigration
+that is web hoock
+then take url from in that check 
+paste in git
+enable ssl verification = no
+apply in jenkins
+settings git
+test push
+
+
+
+to download library::::::
+configure in jeckins
+build envirnmnet
+there npm 
+execute shell
+npm install
+ng build --env=prod
+
+
+
+
+
+---------------------------
+AZUR
+----------------------
+portal.azure.com
+create webapp
+glc-app-
+
+
+in jecknis
+post build
+actions
+set build artifacts
+before that manage jenkish
+configure sys
+add 
+Host name it will be in azure there click the we can fint FTP host name
+ftp and all delete
+user name also there 
+test configuration
+
+
+
+-----------------------
+post build 
+set build artifacts
+our own ftp created in above steps
+
+sourse file----- dist/**
+dist
+/site/wwwroot/

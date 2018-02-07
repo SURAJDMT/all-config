@@ -1,0 +1,242 @@
+GIT
+--------------------------------
+difference between lab and hub?
+Todo- shows issues when assigned
+milestone- adding issue and it is like a goal
+snippets - to add code and highlight
+SHH - generate it ,
+cat ~/.ssh/id_rsa.pub ----- to check the shh is present or not
+ssh-keygen -t rsa -C "your.email@example.com" -b 4096 -------- to create a SHH key
+TO ADD NEW REPO--
+git clone url
+git add .
+git commit -m "message" 
+git pull 
+git push
+
+will be in our commit view
+wiki
+
+NEW BRANCH
+git checkout -b name
+merge request should provide sourse and destination
+
+CAN COMPARE in branch
+
+REVERT COMMIT:
+git reset head~1..head
+
+git -am is to add and message in one line
+git reset --hard commitID
+git push -f <remote> <local branch>:<remote branch> 
+
+TO REVERT WITHOUT COMMIT
+git revert -n commitId
+git commit -m "message"
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+API - a set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service
+restAPI - A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data.
+A RESTful API -- also referred to as a RESTful web service -- is based on representational state transfer (REST) technology, an architectural style and approach to communications often used in web services development.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+MAVEN
+----------------------------------------------------------------------
+build tool
+dependancy managment
+project structure
+A Project Object Model or POM
+building, publishing  and deploy
+maven lifecycle - 3 in that one has 7 , 3 and 4...clean defealt site
+templet also created
+groupeId , artifactId
+package - war or jar
+install - local maven repo
+PLUGINS____
+--version is JVM
+--in plugin compalier we can change the version
+
+<repositories>
+    <repository>
+      <id>java.net</id>
+      <url>https://maven.java.net/content/repositories/public/</url>
+    </repository>
+ </repositories>
+------------------------------------------------------------------------------------
+HIBERNATE
+-----------------------
+config ---- driver,url,username, pass, dialect, entity class
+sessionFactory -- creates sessions, get session from sessionFactory
+configuration is a class , configure is a method(hibernate)
+embeded --- object inside a object @Embedded in that object as well as in entity
+@AtributeOverRide - home and office address   @AtributeOverRides -- for array
+@ElimentCollections
+inheritance
+persisting, trainsient, detached
+
+operation done before commit is exicuted
+--------------------------------------------------------------------------
+SPRING
+---------------------
+beans is added ....single ton is for one for one aplication
+ref the property
+property name and value for initializing
+WE CAN INJECT OBJECTS _____
+AplicationContext context =  new classPathXmlApplicationContext("spring.xml");                           JSTL JSTL JSTL
+context.getBean("Triangle");
+
+three point type by name with values
+then give property name and ref of that bean rather than value
+<beans>
+<bean id="name" class="">
+<property name="" value or ref =""/>
+</bean>
+</beans>
+
+
+FOR LIST--- one <property name="">
+
+<ref bean ="id">
+.....
+...
+</list>
+</property>
+
+INNERBEAN---
+<property name ="">
+<bean class="">
+<property name value />
+</bean>
+</property>
+
+AUTOWIRING---Interlegently refers the bean wich we want to refer to
+in xml after class in bean tag can mention autowire="byName" or "byType" or "constructor"
+
+WE CAN GIVE PARENT in bean tag
+
+AUTOWIRED annotation is depending on byType if more than one then it will take as byName
+
+COMPONENT notation for mentioning bean in xml
+------------------------------------------------------------------
+SQL
+-------------------
+DDL< DML< DCL < TCL
+
+DDL - definition - manuplate with table , schema so on
+DML - manuplation - data manuplation present inside table
+DCL - control - permistions
+TCL - commits - between database	 
+
+insert, delete, create, check , update
+1NF  - no automic value 
+2NF - no non prime atribute should be depend up on canditate key like no repetation of primary key, age will be repeated simply in teacher table
+3NF- transitive relation ship
+BCNF - mix of 2NF and 3Nf ---- trasitive as well as simply reeated 
+
+TRIGER-- delimiter $$ create triger name after update on table name for each row begin body end $$
+
+---------------------------------------------------------------
+MULTITHREADING
+-----------------------
+extends thread then run method should be there 
+obj.start();
+
+
+impliments runnable then directly 
+Thread t1 = new Thread(obj);
+t1.start();
+
+
+
+Thread t1  = new Thread(new Runnable(){
+public void run(){
+for(){
+c.increment
+}
+}
+})
+
+class counter{
+void syscronized incriment(){
+count ++;
+}
+}
+--------------------------------------------------
+ES6
+--------------  
+let is the scope of a block, can use like local variable   LET
+const we cant change that value but can push in the array i.e, no assigning
+TEMPLETS ----- a = 'hello' b='wprld'   c= `hello ${b}`
+SPREAD operator -- let a = [2,4,5] b=[...a,6,9]
+DISTRUCTION let c =[100,200] let [a,b] = c;
+ARROW FUNCTION --- function(){}   --->   ()=>{} no name for the fuction ...const name = ()=>{}
+MAP---let points =[10,20,30];   increase all th eelemnt --- ley addone=(element)=>{return element +1} points = points.map(addone);
+FILTER --- change the array size let ispass =(grade)=>{return grade=>50} let scores =[10,70] let passing = scores.filter(isPass); then the passing=[70]
+---------------------------------------
+DOM
+---------
+document.getElementById("demo").innerHTML="hello";  byname,byclassname, by tagname
+attribute
+element.style.property = new style
+document.querySelectorAll("p.intro");
+document.getElementById("p2").style.color = "blue";
+document.getElementById("p2").style.fontFamily = "Arial";
+document.getElementById("p2").style.fontSize = "larger";
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+MOUSEDOWN< MOUSEUP
+
+---------
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+</div>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+var element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+--------------------
+MODULES
+
+export in one fine and import{name} from './directory'
+then we can use
+can export {function1, fun1}
+
+OOP IN ES6----
+class same as java
+-------------------------------
+DESIGH PATTERN---
+NOOOOOOOOOOOO
+Module-- data hiding
+Prototype--override
+Observer--
+Singleton--
+_--------------------------------------------------------------------------------
+JSTL--JSP standerd tag library
+------------------
+<c:set var="gjghh" value="hhgh"/>
+c:out --- used to print
+c:if test="${jhjkh}">
+<c:choose>
+<c:when test="">khgg</c:when>
+</c:choose>
+
+<c:forEach var="gjhg" item="${}">
+small import or define taglib
+
+<% taglib prefix="c" uri="dfghjfghj %>"
+prefix ="fmt" uri -- formating tag
+
+
+
+
+
+
+
+
+
+
+
